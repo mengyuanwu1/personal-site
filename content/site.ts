@@ -1,3 +1,5 @@
+import { withBasePath } from "../lib/sitePaths";
+
 export const siteContent = {
   name: "Mengyuan (Millie) Wu",
   shortName: "Millie Wu",
@@ -11,18 +13,18 @@ export const siteContent = {
   email: "mw3209@columbia.edu",
   website: "milliewu.io",
   phone: "(617) 992-4468",
-  cvHref: "/Mengyuan_Wu_CV_032026.pdf",
+  cvHref: withBasePath("/Mengyuan_Wu_CV_032026.pdf"),
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/millie-wu/",
     github: "https://github.com/mengyuanwu1",
     email: "mailto:mw3209@columbia.edu",
   },
   navigation: [
-    { label: "About", href: "/#about" },
-    { label: "Publications", href: "/#publications" },
-    { label: "News", href: "/#news" },
-    { label: "Projects", href: "/#projects" },
-    { label: "CV", href: "/Mengyuan_Wu_CV_032026.pdf", external: true },
+    { label: "About", href: withBasePath("/#about") },
+    { label: "Publications", href: withBasePath("/#publications") },
+    { label: "News", href: withBasePath("/#news") },
+    { label: "Projects", href: withBasePath("/#projects") },
+    { label: "CV", href: withBasePath("/Mengyuan_Wu_CV_032026.pdf"), external: true },
   ],
   heroTags: ["Researcher", "Developer", "Inventor"],
   heroSummary: [

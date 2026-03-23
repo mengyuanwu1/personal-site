@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect } from "react";
+import { withBasePath } from "../../lib/sitePaths";
 
 type StaticRedirectPageProps = {
   href: string;
@@ -9,14 +9,16 @@ type StaticRedirectPageProps = {
 };
 
 export function StaticRedirectPage({ href, label }: StaticRedirectPageProps) {
+  const targetHref = withBasePath(href);
+
   useEffect(() => {
-    window.location.replace(href);
-  }, [href]);
+    window.location.replace(targetHref);
+  }, [targetHref]);
 
   return (
     <main className="page-shell" style={{ paddingTop: "6rem" }}>
       <p>
-        Redirecting to <Link href={href}>{label}</Link>...
+        Redirecting to <a href={targetHref}>{label}</a>...
       </p>
     </main>
   );

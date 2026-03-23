@@ -191,7 +191,10 @@ h3 {
   margin-top: 1.5rem;
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
-  background: url("/home_banner.png") center / cover no-repeat;
+  background-color: #d3c6b4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .editorial-section,

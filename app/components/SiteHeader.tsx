@@ -20,7 +20,7 @@ export function SiteHeader({ currentPath }: { currentPath: string }) {
             <a href={item.href} key={item.label} target="_blank" rel="noreferrer">
               {item.label}
             </a>
-          ) : item.href.startsWith("/#") ? (
+          ) : item.href.includes("#") ? (
             <a href={item.href} key={item.label}>
               {item.label}
             </a>

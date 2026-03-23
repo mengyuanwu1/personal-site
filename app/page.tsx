@@ -3,6 +3,7 @@ import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
 import { StyledImage } from "./components/StyledImage";
 import { siteContent } from "../content/site";
+import { withBasePath } from "../lib/sitePaths";
 
 function highlightOwnName(authors: string) {
   const ownName = "Wu, Mengyuan";
@@ -24,7 +25,11 @@ export default function Home() {
     <main className="page-shell">
       <SiteHeader currentPath="/" />
 
-      <section aria-hidden="true" className="landing-hero" />
+      <section
+        aria-hidden="true"
+        className="landing-hero"
+        style={{ backgroundImage: `url("${withBasePath("/home_banner.png")}")` }}
+      />
 
       <section className="editorial-section intro-section section-split" id="about">
         <div className="section-aside intro-aside">
