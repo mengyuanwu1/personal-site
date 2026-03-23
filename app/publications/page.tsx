@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import { StaticRedirectPage } from "../components/StaticRedirectPage";
 
 export default function PublicationsPage() {
-  redirect("/#publications");
+  return <StaticRedirectPage href="/#publications" label="Publications" />;
 }

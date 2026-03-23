@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import { StaticRedirectPage } from "../components/StaticRedirectPage";
 
 export default function NewsPage() {
-  redirect("/#news");
+  return <StaticRedirectPage href="/#news" label="News" />;
 }
