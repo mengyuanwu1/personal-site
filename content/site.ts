@@ -17,6 +17,9 @@ export const siteContent = {
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/millie-wu/",
     github: "https://github.com/mengyuanwu1",
+    orcid: "https://orcid.org/0009-0002-3878-8545",
+    googleScholar:
+      "https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=3&gmla=AEk_c1vc_wRvXlWMlqtVgY5ZJbJ6rxSgQZuFirObxB-_4WgL3FUk2yBjspevL1SwH8RGORtyxZY0jo6AgYzqT4JBvlpa&user=IM8F8u0AAAAJ",
     email: "mailto:mw3209@columbia.edu",
   },
   navigation: [
