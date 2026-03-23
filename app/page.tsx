@@ -195,7 +195,7 @@ export default function Home() {
                   <p className="citation-venue">{item.venue}</p>
                   {item.note ? (
                     <p className="citation-note citation-award">
-                      <span aria-hidden="true">🏆</span>
+                      <span aria-hidden="true">🏅</span>
                       <span>{item.note}</span>
                     </p>
                   ) : null}
